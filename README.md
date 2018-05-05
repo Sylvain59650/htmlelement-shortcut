@@ -1,23 +1,23 @@
 <div style="display:inline">
 
-[![build](https://travis-ci.org/Sylvain59650/htmlElement-shortcut.png?branch=master)](https://travis-ci.org/Sylvain59650/htmlElement-shortcut)
-![version](https://img.shields.io/npm/v/htmlElement-shortcut.svg)
-![package](https://img.shields.io/github/package-json/v/Sylvain59650/htmlElement-shortcut.svg)
-![dependencies](https://img.shields.io/david/Sylvain59650/htmlElement-shortcut.svg)
-![minified](https://img.shields.io/bundlephobia/min/htmlElement-shortcut.svg)
+[![build](https://travis-ci.org/Sylvain59650/htmlelement-shortcut.png?branch=master)](https://travis-ci.org/Sylvain59650/htmlelement-shortcut)
+![version](https://img.shields.io/npm/v/htmlelement-shortcut.svg)
+![package](https://img.shields.io/github/package-json/v/Sylvain59650/htmlelement-shortcut.svg)
+![dependencies](https://img.shields.io/david/Sylvain59650/htmlelement-shortcut.svg)
+![minified](https://img.shields.io/bundlephobia/min/htmlelement-shortcut.svg)
 ![linter](https://img.shields.io/badge/eslint-ok-blue.svg)
 ![tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)
-![license](https://img.shields.io/npm/l/htmlElement-shortcut.svg)
-[![hits](http://hits.dwyl.com/Sylvain59650/htmlElement-shortcut.svg)](http://hits.dwyl.com/Sylvain59650/htmlElement-shortcut)
+![license](https://img.shields.io/npm/l/htmlelement-shortcut.svg)
+[![hits](http://hits.dwyl.com/Sylvain59650/htmlelement-shortcut.svg)](http://hits.dwyl.com/Sylvain59650/htmlelement-shortcut)
 </div>
 
 
  <div class="Note" style="color:orange;font-style:italic">
  
-The lastest version of this document is available on [Github > htmlElement-shortcut](https://github.com/Sylvain59650/htmlElement-shortcut/blob/master/README.md)
+The lastest version of this document is available on [Github > htmlelement-shortcut](https://github.com/Sylvain59650/htmlelement-shortcut/blob/master/README.md)
 </div>
 
-# HTMLElement-Shortcut
+# htmlelement-Shortcut
 
     Allows you to associate a keyboard shortcut with an HTML element (input, textarea, document, etc.).
 
@@ -25,18 +25,18 @@ The lastest version of this document is available on [Github > htmlElement-short
 
 ## Installation
 
-    npm install htmlElement-shortcut --save
+    npm install htmlelement-shortcut --save
 
 or
 
-    yarn add htmlElement-shortcut --save
+    yarn add htmlelement-shortcut --save
 
 
 ## prerequisites
 
 ### for browser
 
-    <script src="node_modules/htmlElement-shortcut/distrib/htmlElement-shortcut.min.js"></script>
+    <script src="node_modules/htmlelement-shortcut/distrib/htmlelement-shortcut.min.js"></script>
 
 ## Availables operations
     - shortcut
