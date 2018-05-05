@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <script src="../distrib/htmlelement-shortcut.min.js"></script>
+</head>
+
+<body id="t0">
+
+  <input id="t1" />
+  <input id="t2" />
+  <textarea id="t3"></textarea>
+  <input type="checkbox" id="t4" />
+  <select id="t5"><option>1</option></select>
+  <input type="file" id="t6" />
+  <script>
+    document.querySelector("#t1").shortcut("ctrl+F1", function() {
+      alert("ok f1");
+    }, false);
+
+    document.querySelector("#t2").shortcut("ctrl+A", function() {
+      alert("ok ctrl+a");
+    }, false);
+
+    document.querySelector("#t0").shortcut("meta+A", function() {
+      alert("ok meta+a");
+    }, false);
+
+    document.querySelector("#t3").shortcut("ctrl+shift+B", function() {
+      alert("ok ctrl+shift+B");
+    }, false);
+
+    document.querySelector("#t4").shortcut("i", function() {
+      alert("ok i");
+    }, false);
+
+    document.querySelector("#t5").shortcut("ctrl+shift+meta+M", function() {
+      alert("ok ctrl+shift+meta+M");
+    }, false);
+
+    document.querySelector("#t6").shortcut("alt+M", function() {
+      alert("ok alt+M");
+      document.querySelector("#t3").unshortcut("ctrl+shift+B");
+    }, false);
+  </script>
+</body>

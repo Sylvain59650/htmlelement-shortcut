@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <script src="../distrib/htmlelement-shortcut.min.js"></script>
+</head>
+
+<body id="t0">
+
+  <input id="t1" type="text" />
+  <input id="t2" type="text" />
+
+  <script>
+    document.querySelector("#t1").shortcut("ctrl+F1", function() {
+      alert("ctrl+F1 on input t1");
+    }, false);
+
+    document.querySelector("#t2").shortcut("ctrl+F1", function() {
+      alert("ctrl+F1 on input t2");
+    }, false);
+
+    document.querySelector("#t2").shortcut("alt+G", function() {
+      alert("alt+G on input t2");
+    }, false);
+  </script>
+</body>
