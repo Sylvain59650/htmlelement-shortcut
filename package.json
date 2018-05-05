@@ -3,7 +3,6 @@
   "version": "0.9.1",
   "description": "associate keyboard shortcut on html element",
   "main": "distrib/htmlelement-shorcut.min.js",
-  "directories": {},
   "scripts": {
     "test": "exit 0"
   },
