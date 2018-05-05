@@ -38,7 +38,6 @@ or
 
     <script src="node_modules/htmlElement-shortcut/distrib/htmlElement-shortcut.min.js"></script>
 
-
 ## Availables operations
     - shortcut
     - unshortcut
