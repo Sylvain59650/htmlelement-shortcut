@@ -11,12 +11,12 @@ const chemins = {
 
 
 
-gulp.task("htmlElement-shortcut.min.js", () => {
+gulp.task("htmlelement-shortcut.min.js", () => {
   return gulp.src([
       "src/**.js",
-      "node_modules/htmlelement-events-extension/distrib/htmlElement-events.min.js"
+      "node_modules/htmlelement-events-extension/distrib/htmlelement-events.min.js"
     ])
-    .pipe(concat("htmlElement-shortcut.min.js"))
+    .pipe(concat("htmlelement-shortcut.min.js"))
     .pipe(babel({
       presets: ["es2015"],
       compact: true
@@ -29,15 +29,15 @@ gulp.task("htmlElement-shortcut.min.js", () => {
 });
 
 
-gulp.task("watch:htmlElement-shortcut.min.js", function() {
+gulp.task("watch:htmlelement-shortcut.min.js", function() {
   watch("./src/**.js", function() {
-    gulp.run("htmlElement-shortcut.min.js");
+    gulp.run("htmlelement-shortcut.min.js");
   });
 });
 
-gulp.task("default", ["htmlElement-shortcut.min.js"]);
+gulp.task("default", ["htmlelement-shortcut.min.js"]);
 
 
 gulp.task("all", ["default"]);
 
-gulp.task("watch", ["watch:htmlElement-shortcut.min.js"]);
+gulp.task("watch", ["watch:htmlelement-shortcut.min.js"]);
