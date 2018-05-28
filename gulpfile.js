@@ -6,15 +6,16 @@ const watch = require("gulp-watch");
 
 const chemins = {
   sources: "./src/",
-  distrib: "./distrib/"
+  distrib: "./distrib/",
+  demo: "./docs/node_modules/htmlelement-shortcut/distrib/"
 };
 
 
 
 gulp.task("htmlelement-shortcut.min.js", () => {
   return gulp.src([
-      "src/**.js",
-      "node_modules/htmlelement-events-extension/distrib/htmlelement-events.min.js"
+      "node_modules/htmlelement-events-extension/distrib/htmlelement-events.min.js",
+      "src/**.js"
     ])
     .pipe(concat("htmlelement-shortcut.min.js"))
     .pipe(babel({
@@ -25,9 +26,42 @@ gulp.task("htmlelement-shortcut.min.js", () => {
     //.pipe(uglify())
     //.on('error', function(err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
     // .pipe(umd())
+    .pipe(debug())
     .pipe(gulp.dest(chemins.distrib))
 });
 
+
+gulp.task("release", () => {
+  return gulp.src([
+      "node_modules/htmlelement-events-extension/distrib/htmlelement-events.min.js",
+      "src/**.js"
+    ])
+    .pipe(concat("htmlelement-shortcut.min.js"))
+    .pipe(babel({
+      presets: ["es2015"],
+      compact: true,
+      comments: false,
+      minified: true
+    }))
+    .pipe(debug())
+    .pipe(gulp.dest(chemins.distrib))
+});
+
+gulp.task("demo", () => {
+  return gulp.src([
+      "node_modules/htmlelement-events-extension/distrib/htmlelement-events.min.js",
+      "src/**.js"
+    ])
+    .pipe(concat("htmlelement-shortcut.min.js"))
+    .pipe(babel({
+      presets: ["es2015"],
+      compact: false,
+      comments: false,
+      minified: false
+    }))
+    .pipe(debug())
+    .pipe(gulp.dest(chemins.demo))
+});
 
 gulp.task("watch:htmlelement-shortcut.min.js", function() {
   watch("./src/**.js", function() {

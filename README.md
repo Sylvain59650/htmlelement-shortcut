@@ -1,3 +1,5 @@
+# htmlelement-Shortcut
+
 <div style="display:inline">
 
 [![build](https://travis-ci.org/Sylvain59650/htmlelement-shortcut.png?branch=master)](https://travis-ci.org/Sylvain59650/htmlelement-shortcut)
@@ -17,7 +19,7 @@
 The lastest version of this document is available on [Github > htmlelement-shortcut](https://github.com/Sylvain59650/htmlelement-shortcut/blob/master/README.md)
 </div>
 
-# htmlelement-Shortcut
+
 
     Allows you to associate a keyboard shortcut with an HTML element (input, textarea, document, etc.).
 

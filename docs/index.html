@@ -1,0 +1,107 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="3parts/iziToast.min.css?v=130c">
+  <script src="3parts/iziToast.min.js?v=130c" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="demo.css" />
+</head>
+
+<body id="t0">
+  <div class="breadcrumb">
+    <a href="https://www.npmjs.com/package/htmlelement-shortcut">
+      <img src="npm.png" height="32"> </a>
+    <a href="https://github.com/Sylvain59650/htmlelement-shortcut"><img src="https://github.com/favicon.ico" title="GitHub" height="32" /></a>
+  </div>
+
+  <style>
+    fieldset {
+      margin-bottom: 30px;
+    }
+  </style>
+
+  <script src="node_modules/htmlelement-shortcut/distrib/htmlelement-shortcut.min.js"></script>
+
+  <fieldset>
+    <legend>Shortcut listening on this field : ctrl+F2</legend>
+    <input id="t1" />
+  </fieldset>
+
+  <fieldset>
+    <legend>Shortcut listening on this field : ctrl+A</legend>
+    <input id="t2" />
+  </fieldset>
+
+  <fieldset>
+    <legend>Shortcut listening on this field :shift+B</legend>
+    <textarea id="t3"></textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>Shortcut listening on this field : ctrl+shift+meta+M</legend>
+    <select id="t5"><option>1</option></select>
+  </fieldset>
+
+  <fieldset>
+    <legend>Shortcut listening on this field : i</legend>
+    <input type="checkbox" id="t4" />
+  </fieldset>
+
+
+
+  <fieldset>
+    <legend>Shortcut listening on this field : alt+M</legend>
+    <input type="file" id="t6" />
+  </fieldset>
+
+
+  <script>
+    function alert(msg) {
+      iziToast.success({
+        title: "Event",
+        message: msg,
+        timeout: 1500
+      });
+    }
+
+    document.querySelector("#t1").shortcut("ctrl+F2", function() {
+      alert("ctrl+F2");
+    }, false);
+
+    document.querySelector("#t2").shortcut("ctrl+A", function() {
+      alert("ctrl+a");
+    }, false);
+
+    document.querySelector("#t0").shortcut("meta+A", function() {
+      alert(" meta+a");
+    }, false);
+
+    document.querySelector("#t3").shortcut("shift+B", function() {
+      alert("shift+B");
+    }, false);
+
+    document.querySelector("#t4").shortcut("i", function() {
+      alert("i");
+    }, false);
+
+    document.querySelector("#t5").shortcut("ctrl+shift+meta+M", function() {
+      alert("ctrl+shift+meta+M");
+    }, false);
+
+    document.querySelector("#t6").shortcut("alt+M", function() {
+      alert("alt+M");
+
+    }, false);
+  </script>
+
+  <hr/>
+
+  <button id="undo">Unshortcut shift+B on t3</button>
+
+  <script>
+    document.querySelector("#undo").on("click", function() {
+      document.querySelector("#t3").unshortcut("shift+B");
+    }, false);
+  </script>
+</body>
+
+</html>

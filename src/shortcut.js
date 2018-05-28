@@ -82,7 +82,8 @@ window.__SC = (function() {
     let code = 0;
     if (event.keyCode) { code = event.keyCode; } else if (event.which) { code = event.which; }
     if (__isPressing) { return; }
-    for (let e of __registerEvents) {
+    for (var i = 0; i < __registerEvents.length; i++) {
+      var e = __registerEvents[i];
       if (e.target === el) {
         if (e.key === code && e.ctrl === event.ctrlKey &&
           e.alt === event.altKey &&
