@@ -3,12 +3,12 @@
 <div style="display:inline">
 
 [![build](https://travis-ci.org/Sylvain59650/htmlelement-shortcut.png?branch=master)](https://travis-ci.org/Sylvain59650/htmlelement-shortcut)
-![version](https://img.shields.io/npm/v/htmlelement-shortcut.svg)
-![package](https://img.shields.io/github/package-json/v/Sylvain59650/htmlelement-shortcut.svg)
-![dependencies](https://img.shields.io/david/Sylvain59650/htmlelement-shortcut.svg)
+[![version](https://img.shields.io/npm/v/htmlelement-shortcut.svg)](https://www.npmjs.com/package/htmlelement-shortcut)
+[![package](https://img.shields.io/github/package-json/v/Sylvain59650/htmlelement-shortcut.svg)](https://github.com/Sylvain59650/htmlelement-shortcut)
+[![dependencies](https://img.shields.io/david/Sylvain59650/htmlelement-shortcut.svg)](https://david-dm.org/Sylvain59650/htmlelement-shortcut)
 ![minified](https://img.shields.io/bundlephobia/min/htmlelement-shortcut.svg)
 ![linter](https://img.shields.io/badge/eslint-ok-blue.svg)
-![tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)
+[![tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://sylvain59650.github.io/htmlelement-shortcut/)
 ![license](https://img.shields.io/npm/l/htmlelement-shortcut.svg)
 [![hits](http://hits.dwyl.com/Sylvain59650/htmlelement-shortcut.svg)](http://hits.dwyl.com/Sylvain59650/htmlelement-shortcut)
 </div>
@@ -45,6 +45,8 @@ or
     - unshortcut
 
 ## usage
+
+ **See [Demo](https://sylvain59650.github.io/htmlelement-shortcut/)**
 
     <input id="t1" type="text" />
     <input id="t2" type="text" />
